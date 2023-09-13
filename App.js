@@ -4,7 +4,9 @@ import React from 'react'
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.content}>Hello World</Text>
+      <Text style={styles.title}>Title</Text>
+      <Text style={styles.content}>Content</Text>
+      <Text style={styles.bottom}>Bottom</Text>
     </View>
   )
 }
@@ -17,10 +19,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  content:{
-    fontSize: 40,
-    color: "black",
+  title:{
+    fontSize: 70,
+    color: "red",
     fontStyle: "italic",
     fontWeight: "bold",
-  }
+    textDecorationLine: "underline",
+  },
+  content:{
+    fontSize: 50,
+    color: "green",
+    fontStyle: "italic",
+    fontWeight: "bold",
+  },
+  bottom:{
+    fontSize: 30,
+    color: "blue",
+    fontStyle: "italic",
+    fontWeight: "bold",
+  },
 })
